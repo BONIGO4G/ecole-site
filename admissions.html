@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Admissions | JBS2+</title>
+    <meta name="description" content="Demande d’admission au Collège Jean Baptiste de la Salle 2 — formulaire Netlify Forms." />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Aller au contenu</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html">
+          <span class="logo" aria-hidden="true">
+            <svg viewBox="0 0 64 64" width="28" height="28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="g" x1="8" y1="8" x2="56" y2="56" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#4f46e5"/>
+                  <stop offset="1" stop-color="#22c55e"/>
+                </linearGradient>
+              </defs>
+              <path d="M32 6 58 16v20c0 13.5-9.6 20.8-26 22-16.4-1.2-26-8.5-26-22V16L32 6Z" fill="rgba(255,255,255,.06)" stroke="rgba(255,255,255,.25)" stroke-width="2"/>
+              <path d="M32 14 48 20v14c0 9.6-6.5 14.8-16 15.7-9.5-.9-16-6.1-16-15.7V20l16-6Z" fill="url(#g)" opacity=".9"/>
+              <path d="M24 38c2.8-8.7 12.1-12.9 19-7.2" stroke="white" stroke-width="3" stroke-linecap="round"/>
+            </svg>
+          </span>
+          <span class="brand-text">
+            <span class="brand-name">JBS2+</span>
+            <span class="brand-sub">Admissions</span>
+          </span>
+        </a>
+
+        <nav class="nav" aria-label="Navigation principale">
+          <a href="index.html" class="nav-link">Accueil</a>
+          <a href="admissions.html" class="nav-link is-active">Admissions</a>
+          <a href="programmes.html" class="nav-link">Programmes</a>
+          <a href="a-propos.html" class="nav-link">À propos</a>
+          <a href="faq.html" class="nav-link">FAQ</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+
+        <a class="cta-top" href="contact.html">
+          Besoin d’aide ? <span class="arrow">→</span>
+        </a>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="section">
+        <div class="container">
+          <div class="section-head">
+            <h1 class="page-title">Demande d’admission</h1>
+            <p class="subtle">
+              Remplissez le formulaire ci-dessous. Un accusé de réception sera envoyé au parent
+              via l’email saisi, et une notification sera transmise à l’équipe JBS2.
+            </p>
+          </div>
+
+          <div class="layout-2">
+            <div class="panel">
+              <form
+                data-enhanced="1"
+                class="form"
+                name="inscription"
+                method="POST"
+                data-netlify="true"
+                action="/"
+                netlify
+              >
+                <div class="form-grid">
+                  <div class="field">
+                    <label for="nom">Nom de l’élève</label>
+                    <input id="nom" name="nom" required placeholder="Ex : Kouamé Yao" />
+                  </div>
+                  <div class="field">
+                    <label for="prenom">Prénom de l’élève</label>
+                    <input id="prenom" name="prenom" required placeholder="Ex : Yao" />
+                  </div>
+                </div>
+
+                <div class="form-grid">
+                  <div class="field">
+                    <label for="date_naissance">Date de naissance</label>
+                    <input id="date_naissance" type="date" name="date_naissance" required />
+                  </div>
+                  <div class="field">
+                    <label for="telephone">Téléphone (parent/tuteur)</label>
+                    <input
+                      id="telephone"
+                      name="telephone"
+                      required
+                      inputmode="tel"
+                      placeholder="Ex : +225 01 23 45 67 89"
+                    />
+                  </div>
+                </div>
+
+                <div class="form-grid">
+                  <div class="field">
+                    <label for="email">Email (parent/tuteur)</label>
+                    <input
+                      id="email"
+                      type="email"
+                      name="email"
+                      required
+                      placeholder="Ex : vous@gmail.com"
+                      autocomplete="email"
+                    />
+                  </div>
+                  <div class="field">
+                    <label for="classe">Classe souhaitée</label>
+                    <select id="classe" name="classe" required>
+                      <option value="" selected disabled>Choisir...</option>
+                      <option value="6e">6e</option>
+                      <option value="5e">5e</option>
+                      <option value="4e">4e</option>
+                      <option value="3e">3e</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-grid">
+                  <div class="field">
+                    <label for="domaine">Domaine principal</label>
+                    <select id="domaine" name="domaine" required>
+                      <option value="" selected disabled>Choisir...</option>
+                      <option value="Enseignement général">Enseignement général</option>
+                      <option value="Formation informatique">Formation informatique</option>
+                      <option value="Enseignement général + informatique">Enseignement général + informatique</option>
+                    </select>
+                  </div>
+                  <div class="field">
+                    <label for="session">Session</label>
+                    <select id="session" name="session" required>
+                      <option value="" selected disabled>Choisir...</option>
+                      <option value="Rentrée prochaine">Rentrée prochaine</option>
+                      <option value="Septembre">Septembre</option>
+                      <option value="Octobre">Octobre</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label for="message">Message (optionnel)</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="4"
+                    placeholder="Motivation, disponibilité, besoins particuliers..."
+                  ></textarea>
+                </div>
+
+                <div class="notice">
+                  En envoyant ce formulaire, vous acceptez que vos informations soient utilisées pour traiter la demande d’inscription.
+                </div>
+
+                <div class="row-actions">
+                  <button class="btn primary" type="submit">
+                    Envoyer la demande <span class="arrow">→</span>
+                  </button>
+                  <a class="btn secondary" href="faq.html">
+                    Lire la FAQ <span class="arrow">→</span>
+                  </a>
+                </div>
+
+                <div style="display:none">
+                  <label>
+                    Don’t fill this out if you’re human:
+                    <input name="bot-field" />
+                  </label>
+                </div>
+              </form>
+            </div>
+
+            <aside class="aside">
+              <div class="info-card">
+                <h2 class="card-title">Ce que vous recevrez</h2>
+                <ul class="checklist">
+                  <li><strong>Accusé de réception</strong> au parent (email saisi)</li>
+                  <li><strong>Notification</strong> à l’équipe JBS2+ pour traitement</li>
+                  <li><strong>Redirection</strong> avec message de succès</li>
+                </ul>
+
+                <div class="divider"></div>
+
+                <h3 class="mini-title">Configuration Netlify (à faire)</h3>
+                <ol class="steps">
+                  <li>Netlify → <strong>Site settings</strong> → <strong>Forms</strong> → <strong>inscription</strong></li>
+                  <li><strong>Notification</strong> : envoi à <strong>yeouehieboniface@gmail.com</strong></li>
+                  <li>
+                    <strong>Responder</strong> (email parent) :
+                    <div class="code-pill">{{ email }}</div>
+                  </li>
+                  <li><strong>Redirect URL</strong> : <div class="code-pill">admissions.html?ok=1</div></li>
+                </ol>
+
+                <p class="hint">
+                  Si Netlify utilise une autre syntaxe de variable, vérifiez l’aperçu “Templates/Variables” dans l’onglet Forms.
+                </p>
+              </div>
+
+              <div class="info-card info-card-muted">
+                <h3 class="mini-title">Besoin d’aide maintenant ?</h3>
+                <p class="hint">Contactez-nous et nous vous guiderons sur les pièces et étapes.</p>
+                <a class="btn secondary" href="contact.html">Nous écrire <span class="arrow">→</span></a>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true">
+      <div class="toast-title">✅ Demande envoyée</div>
+      <div class="toast-text">Merci ! Nous avons bien reçu votre demande.</div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

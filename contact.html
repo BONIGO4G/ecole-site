@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact | JBS2+</title>
+    <meta name="description" content="Contactez le Collège Jean Baptiste de la Salle 2." />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Aller au contenu</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html">
+          <span class="logo" aria-hidden="true">
+            <svg viewBox="0 0 64 64" width="28" height="28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="g" x1="8" y1="8" x2="56" y2="56" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#4f46e5"/>
+                  <stop offset="1" stop-color="#22c55e"/>
+                </linearGradient>
+              </defs>
+              <path d="M32 6 58 16v20c0 13.5-9.6 20.8-26 22-16.4-1.2-26-8.5-26-22V16L32 6Z" fill="rgba(255,255,255,.06)" stroke="rgba(255,255,255,.25)" stroke-width="2"/>
+              <path d="M32 14 48 20v14c0 9.6-6.5 14.8-16 15.7-9.5-.9-16-6.1-16-15.7V20l16-6Z" fill="url(#g)" opacity=".9"/>
+            </svg>
+          </span>
+          <span class="brand-text">
+            <span class="brand-name">JBS2+</span>
+            <span class="brand-sub">Contact</span>
+          </span>
+        </a>
+
+        <nav class="nav" aria-label="Navigation principale">
+          <a href="index.html" class="nav-link">Accueil</a>
+          <a href="admissions.html" class="nav-link">Admissions</a>
+          <a href="programmes.html" class="nav-link">Programmes</a>
+          <a href="a-propos.html" class="nav-link">À propos</a>
+          <a href="faq.html" class="nav-link">FAQ</a>
+          <a href="contact.html" class="nav-link is-active">Contact</a>
+        </nav>
+
+        <a class="cta-top" href="admissions.html">
+          Admissions <span class="arrow">→</span>
+        </a>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="section">
+        <div class="container">
+          <div class="section-head">
+            <h1>Contact</h1>
+            <p class="subtle">Écrivez-nous. Réponse selon disponibilité.</p>
+          </div>
+
+          <div class="layout-2">
+            <div class="panel">
+              <h2 class="card-title">Coordonnées</h2>
+              <div class="contact-grid-2">
+                <div class="contact-item">
+                  <div class="contact-label">Email</div>
+                  <div class="contact-value">yeouehieboniface@gmail.com</div>
+                </div>
+                <div class="contact-item">
+                  <div class="contact-label">Téléphone</div>
+                  <div class="contact-value">+225 XX XXX XX XX</div>
+                </div>
+                <div class="contact-item">
+                  <div class="contact-label">Localisation</div>
+                  <div class="contact-value">Abidjan (à compléter)</div>
+                </div>
+                <div class="contact-item">
+                  <div class="contact-label">Horaires</div>
+                  <div class="contact-value">Lun–Ven (à préciser)</div>
+                </div>
+              </div>
+
+              <div class="divider"></div>
+
+              <h2 class="card-title">Envoyer un message</h2>
+              <div class="form-note">
+                (Optionnel) Vous pouvez activer un formulaire Netlify “contact” si vous le souhaitez.
+                Pour l’instant, ce site fournit le style. Le formulaire d’admission est déjà prêt.
+              </div>
+
+              <form class="form disabled" onsubmit="return false;" aria-disabled="true">
+                <div class="form-grid">
+                  <div class="field">
+                    <label for="c_name">Nom</label>
+                    <input id="c_name" placeholder="Votre nom" />
+                  </div>
+                  <div class="field">
+                    <label for="c_email">Email</label>
+                    <input id="c_email" type="email" placeholder="vous@gmail.com" />
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label for="c_message">Message</label>
+                  <textarea id="c_message" rows="4" placeholder="Écrivez votre message..."></textarea>
+                </div>
+
+                <button class="btn primary" type="submit" disabled>
+                  Envoyer (à activer)
+                </button>
+              </form>
+
+              <p class="hint" style="margin-top:12px;">
+                Si vous voulez aussi un formulaire “Contact” Netlify avec accusé de réception, dites-moi et
+                je vous fournis directement les fichiers complets.
+              </p>
+            </div>
+
+            <aside class="aside">
+              <div class="info-card info-card-muted">
+                <h2 class="card-title">Pour l’admission</h2>
+                <p class="hint">
+                  Le moyen le plus direct est d’utiliser le formulaire d’admission. Vous recevrez automatiquement
+                  un accusé de réception au parent.
+                </p>
+                <a class="btn secondary" href="admissions.html">
+                  Aller à Admissions <span class="arrow">→</span>
+                </a>
+              </div>
+
+              <div class="info-card">
+                <h2 class="card-title">Conseils</h2>
+                <ul class="checklist">
+                  <li>Indiquez la classe souhaitée</li>
+                  <li>Ajoutez toute information utile dans le message</li>
+                  <li>Vérifiez l’orthographe de l’email</li>
+                </ul>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <div class="footer-logo" aria-hidden="true">
+            <svg viewBox="0 0 64 64" width="26" height="26" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="g2" x1="8" y1="8" x2="56" y2="56" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#4f46e5"/>
+                  <stop offset="1" stop-color="#22c55e"/>
+                </linearGradient>
+              </defs>
+              <path d="M32 6 58 16v20c0 13.5-9.6 20.8-26 22-16.4-1.2-26-8.5-26-22V16L32 6Z" fill="rgba(255,255,255,.06)" stroke="rgba(255,255,255,.25)" stroke-width="2"/>
+              <path d="M32 14 48 20v14c0 9.6-6.5 14.8-16 15.7-9.5-.9-16-6.1-16-15.7V20l16-6Z" fill="url(#g2)" opacity=".9"/>
+            </svg>
+          </div>
+          <div>
+            <div class="footer-name">Collège Jean Baptiste de la Salle 2</div>
+            <div class="footer-copy">© <span id="year"></span></div>
+          </div>
+        </div>
+
+        <div class="footer-cols">
+          <div>
+            <div class="footer-heading">Liens</div>
+            <a class="footer-link" href="admissions.html">Admissions</a>
+            <a class="footer-link" href="faq.html">FAQ</a>
+          </div>
+          <div>
+            <div class="footer-heading">Contact</div>
+            <div class="footer-text">yeouehieboniface@gmail.com</div>
+            <div class="footer-text">Abidjan (à compléter)</div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
